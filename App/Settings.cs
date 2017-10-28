@@ -52,7 +52,7 @@ namespace App
                 TwitterAccount = iniFile.ReadValue("notification", "twitteraccount") ?? "";
                 FlashWindow = iniFile.ReadValue("notification", "flashwindow") != "0";
                 // CheatRoulette = iniFile.ReadValue("misc", "cheatroulette") == "1";
-                CheatRoulette = false; // 악용 방지를 위한 강제 비활성화
+                CheatRoulette = true; // 악용 방지를 위한 강제 비활성화
                 Language = iniFile.ReadValue("misc", "language") ?? "ko-kr";
                 Updated = iniFile.ReadValue("internal", "updated") != "0";
                 PlaySound = iniFile.ReadValue("notification","playsound") != "0";
